@@ -6,7 +6,7 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "jepthoniq" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MuZ2l0" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MvYXJjaGl2ZS9IdVJlLnppcA==" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
