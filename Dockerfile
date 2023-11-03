@@ -1,4 +1,4 @@
-FROM jepthoniq/jepthon:slim-buster
+FROM virsos/virsos:slim-buster
 
 #clonning repo 
 RUN git clone https://github.com/virsos/birsos.git /root/JoKeRUB
