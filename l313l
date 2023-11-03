@@ -16,7 +16,7 @@ _get_ziplink () {
             echo "${UPSTREAM_REPO}/archive/HuRe.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9qZXB0aG9uL2FyY2hpdmUvSHVSZS56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MvYXJjaGl2ZS9IdVJlLnppcA==" | base64 -d
     fi
 }
 
