@@ -6,7 +6,7 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "jepthoniq" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9qZXB0aG9uL2FyY2hpdmUvSHVSZS56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MvYXJjaGl2ZS9IdVJlLnppcA==" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_ziplink () {
             echo "${UPSTREAM_REPO}/archive/HuRe.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9qZXB0aG9uL2FyY2hpdmUvSHVSZS56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MvYXJjaGl2ZS9IdVJlLnppcA==" | base64 -d
     fi
 }
 
@@ -26,12 +26,12 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "jepthoniq" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9qZXB0aG9uLmdpdA==" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MvYXJjaGl2ZS9IdVJlLnppcA==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL2plcHRob25pcS9qZXB0aG9uLmdpdA==" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3ZpcnNvcy9iaXJzb3MvYXJjaGl2ZS9IdVJlLnppcA==" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -83,7 +83,7 @@ _set_bot () {
     _run_cat_git
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
-    echo "    بدء تنزيل بيانات الجوكر    "
+    echo "    بدء تنزيل بيانات فايروس    "
     echo "
 
     "
