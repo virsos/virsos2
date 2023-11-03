@@ -1,7 +1,6 @@
 # Telegram
-![Joker](https://i.ibb.co/wcW2S4d/Ephoto360-com-163942f57f3305.jpg)
+![𝐕𝐈𝐑𝐔𝐒 ](https://telegra.ph/file/af1bdfb82736a847b455c.jpg)
 
-**من افضل سورسات اليوزر بوت العربية**
 
 
 
